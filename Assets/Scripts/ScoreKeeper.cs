@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour {
 
-	private int score = 0; 
+	//private int score = 0; 
 	// Use this for initialization
 	void Start () {
 		
@@ -16,7 +16,9 @@ public class ScoreKeeper : MonoBehaviour {
 	}
 
 	public void IncrementScore(int amount) {
-		score += amount;
-		print("Score" + score);
+		Score += amount;
+		print("Score" + Score);
 	}
+
+	public int Score = 0;
 }
